@@ -5,7 +5,7 @@ const  cors = require('cors');
 const bodypraser = require('body-parser')
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors());
 app.use(bodypraser.json());
 app.use(express.urlencoded({ extended: false }));
 // port listening with env
