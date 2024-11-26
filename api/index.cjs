@@ -24,7 +24,7 @@ app.post('/translate', async(req, res)=>{
     try{
         console.log("in try");
         // send request to python backend to interact with ai model
-           const response = await axios.post("https://ai-backend-eight.vercel.app/translate",
+           const response = await axios.post("https://backend-ai-three.vercel.app/translate",
             {text,targetLanguage}
            );
            res.json(response.data);
@@ -35,3 +35,5 @@ app.post('/translate', async(req, res)=>{
            res.status(500).json({err: 'failed to translate the text IN API' })      
     }
 });
+
+module.exports = app;
