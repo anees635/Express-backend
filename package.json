@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.cjs",
-    "build": "tsc",
-    "vercel-build": "echo hello"
+    "build": "tsc"
+    
   },
   "author": "",
   "license": "ISC",
